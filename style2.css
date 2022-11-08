@@ -1,0 +1,574 @@
+  body {
+      background: #f5f5f5;
+  }
+
+  /*acount-head*/
+  .account-head {
+      width: 100%;
+      height: auto;
+      float: left;
+
+  }
+
+  h1 {
+      font-size: 28px;
+      color: #333;
+      margin: 20px 0 25px 0;
+  }
+
+  .profile {
+      height: auto;
+      float: left;
+      width: 100%;
+      margin-bottom: 30px;
+
+  }
+
+  .profile .user-head {
+      width: 75%;
+      height: auto;
+      float: left;
+      text-decoration: none;
+      color: #333;
+  }
+
+  .profile .user-head img {
+      float: left;
+      height: 40px;
+      width: 40px;
+      border-radius: 30px;
+      margin: -2px 10px 0 0;
+  }
+
+  .profile .user-head .name {
+      font-size: 17px;
+      font-weight: 600;
+      color: #333;
+      text-transform: capitalize;
+
+  }
+
+  .profile .user-head .edit_profile {
+      font-size: 14px;
+      color: #2d8eff;
+
+  }
+
+  .profile .noti-head {
+      width: 25%;
+      float: left;
+      height: auto;
+
+  }
+
+  .profile .noti-head img {
+      float: right;
+      height: 40px;
+      width: 40px;
+      border-radius: 40px;
+
+
+  }
+
+  /*my-account buttons*/
+  .marketing {
+      margin-right: -10px;
+      margin-left: -10px;
+
+
+  }
+
+  .sale_pitch {
+      position: relative;
+      min-height: 1px;
+      padding-right: 10px;
+      padding-left: 10px;
+      width: 20%;
+      float: left;
+  }
+
+  .sale_pitch p {
+      font-size: 16px;
+      padding: 5px 0;
+      font-weight: 500;
+      color: #333;
+  }
+
+  .sale_pitch img {
+      width: 100%;
+      height: auto;
+  }
+
+  /*row start*/
+
+
+  a:active,
+  a:hover {
+      outline: 0;
+  }
+
+  .row {
+      margin-right: -10px;
+      margin-left: -10px;
+
+
+  }
+
+  .col-lg-3,
+  .col-md-6,
+  .col-xs-3 {
+      position: relative;
+      min-height: 1px;
+      padding-right: 10px;
+      padding-left: 10px;
+      width: 20%;
+      float: left;
+
+  }
+
+
+
+  .col-xs-9 {
+      width: 75%;
+      float: left;
+  }
+
+  .clearfix:after {
+      clear: both;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+      display: table;
+      content: " ";
+  }
+
+  .panel {
+      margin-bottom: 10px;
+      background-color: #fff;
+
+      border-radius: 4px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+      min-height: 50px;
+  }
+
+  .panel p {
+      font-size: 16px;
+      font-weight: 600;
+      color: #333;
+      padding: 0 0 0 10px;
+      line-height: 50px;
+
+
+  }
+
+  .panel p img {
+
+      margin: 0 5px -6px 0;
+  }
+
+  .alert {
+      padding: 13px;
+      background-color: #FFF8EA;
+      color: #333;
+      display: inline-block;
+      clear: both;
+      margin: 10px 0 20px 0;
+      border-radius: 4px;
+      border-left: 5px solid #ffdf9e;
+      border-right: 1px solid #ffdf9e;
+      border-bottom: 1px solid #ffdf9e;
+      border-top: 1px solid #ffdf9e;
+  }
+
+  .alert a {
+      text-decoration: none;
+      border: 1px solid #ccc;
+      padding: 3px 5px;
+      border-radius: 4px;
+      color: #1879F2;
+      margin-left: 5px;
+  }
+
+  .closebtn {
+      margin-left: 15px;
+      color: #333;
+      font-weight: bold;
+      float: right;
+      font-size: 22px;
+      line-height: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+  }
+
+  .closebtn:hover {
+      color: black;
+  }
+
+  @media (max-width:1050px) {
+
+      .col-lg-3,
+      .col-md-6,
+      .col-xs-3,
+      .sale_pitch {
+          width: 33%;
+          float: left;
+      }
+
+      .marketing {}
+  }
+
+  @media (max-width:650px) {
+
+      .col-lg-3,
+      .col-md-6,
+      .col-xs-3,
+      .sale_pitch {
+          width: 50%;
+          float: left;
+      }
+
+      .alert {
+          width: 100%;
+      }
+  }
+
+  @media (max-width:400px) {
+      .row {
+          margin-right: -5px;
+          margin-left: -5px;
+      }
+
+      .col-lg-3,
+      .col-md-6,
+      .col-xs-3 {
+          padding-right: 5px;
+          padding-left: 5px;
+      }
+  }
+
+
+  /*browse button*/
+  .field {
+      float: left;
+      height: auto;
+      width: 99%;
+  }
+
+  .avatar-upload {
+      position: relative;
+      max-width: 100%;
+
+  }
+
+  .avatar-upload .avatar-edit {
+      position: absolute;
+      right: 12px;
+      z-index: 1;
+      top: 10px;
+  }
+
+  .avatar-upload .avatar-edit input {
+      display: none;
+  }
+
+  .avatar-upload .avatar-edit input + label {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      margin-bottom: 0;
+      margin-right: 25px;
+      border-radius: 100%;
+      background: #dc143c;
+      border: 1px solid transparent;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+      cursor: pointer;
+      font-weight: normal;
+      transition: all 0.2s ease-in-out;
+      color: #fff;
+  }
+
+  .avatar-upload .avatar-edit input + label:hover {
+      background: #dc143c;
+      border-color: #d6d6d6;
+  }
+
+  .avatar-upload .avatar-edit input + label:after {
+      content: "\f067";
+      font-family: 'FontAwesome';
+      color: white;
+      position: absolute;
+      top: 8px;
+      left: 0;
+      right: 25px;
+      text-align: center;
+      margin: auto;
+      font-size: 25px;
+  }
+
+  .avatar-upload .avatar-preview {
+      width: 97%;
+      height: 250px;
+      max-height: 250px;
+      float: left;
+      border: 2px dashed #0077c9;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .avatar-upload .avatar-preview > div {
+      width: 100%;
+      height: 100%;
+
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+  }
+
+  /*display previous img*/
+  .pipo {
+      display: inline-block;
+      margin: 0% 2% 2% 0;
+      float: left;
+      width: 23%;
+      height: 100px;
+  }
+
+  .imgThumbo {
+      display: inline-block;
+      width: 100%;
+      max-height: 100px;
+      border-radius: 3px;
+      padding: 1px;
+      cursor: pointer;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .removo {
+      position: relative;
+      float: left;
+      background: red;
+      padding: 0 3px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 100%;
+      margin-top: -110px;
+  }
+
+  .removo a {
+      color: white;
+  }
+
+  /*Browse button*/
+
+  .browse {
+      float: left;
+      display: inline-block;
+      width: 100%;
+      height: 95px;
+      color: transparent;
+
+  }
+
+
+
+  .browse::file-upload-button {
+      visibility: hidden;
+  }
+
+  .browse::-webkit-file-upload-button {
+      visibility: hidden;
+  }
+
+  .browse::-moz-file-upload-button {
+      visibility: hidden;
+  }
+
+  .browse::-ms-file-upload-button {
+      visibility: hidden;
+  }
+
+  .browse::before {
+      content: '+';
+      color: #333;
+      display: inline-block;
+      padding: 30px 45%;
+      border-radius: 3px;
+      text-align: center;
+      outline: none;
+      white-space: nowrap;
+      -webkit-user-select: none;
+      cursor: pointer;
+      text-shadow: 1px 1px #fff;
+      font-weight: 700;
+      font-size: 30px;
+
+  }
+
+  .MultiFile-wrap {
+      float: left;
+      display: block;
+      width: 23%;
+      height: 100px;
+      border: 2px dashed #0077c9;
+      border-radius: 5px;
+      object-fit: cover;
+  }
+
+  .MultiFile-label {}
+
+  .MultiFile-preview {
+      height: 100px;
+      width: 23%;
+      float: left;
+      border-radius: 5px;
+      margin: 0 2% 3% 0;
+      z-index: 1;
+      object-fit: cover;
+
+
+  }
+
+  .MultiFile-title {
+      display: none;
+  }
+
+  .MultiFile-remove {
+      display: inline-block;
+      width: 10px;
+      margin-top: -18px;
+      margin-right: -10px;
+      float: left;
+
+
+  }
+  }
+
+  /*      .browse {
+
+
+            display: inline-block;
+            background-color: #fafafa;
+            border: 2px dashed #0077c9;
+            border-radius: 3px;
+            color: #0077c9;
+            text-align: center;
+            width: 24%;
+            height: 100px;
+            line-height: 100px;
+            outline: none;
+
+            cursor: pointer;
+
+
+            font-size: 20px;
+            font-weight: 400;
+            margin: 2% 0;
+
+        }
+*/
+  /*browse image display*/
+  input[type="file"] {
+      display: inline-block;
+      border: 0;
+      outline: 0;
+
+  }
+
+  .imageThumb {
+      display: inline-block;
+      width: 100%;
+      max-height: 100px;
+
+      border-radius: 3px;
+      padding: 1px;
+      cursor: pointer;
+      height: 100%;
+      object-fit: cover;
+  }
+
+  .pip {
+      display: inline-block;
+      margin: 2% 1% 0 0;
+      float: left;
+      width: 24%;
+      height: 100px;
+
+  }
+
+  .remove {
+      position: relative;
+      float: right;
+      background: red;
+      padding: 0 3px;
+      color: white;
+      text-align: center;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 500;
+      border-radius: 100%;
+      margin-top: -110px;
+  }
+
+  .remove:hover {
+      background: #444;
+      ;
+      color: white;
+  }
+
+  @media (max-width:500px) {
+
+      .pip,
+      .pipo {
+          width: 31%;
+      }
+
+      /*.browse {
+                width: 31%;
+            }
+             .browse::before {
+               padding:100%;  
+                 background: red;
+            }*/
+      .MultiFile-wrap {
+          width: 31%;
+      }
+
+      .MultiFile-preview {
+          width: 31%;
+      }
+
+  }
+
+
+  @media (max-width:400px) {
+
+      .pip,
+      .pipo {
+          width: 48%;
+      }
+
+      /*  .browse {
+                width: 48%;
+            }
+             .browse::before {
+               padding: 30px 100%;  
+            }*/
+
+      .MultiFile-wrap {
+          width: 48%;
+      }
+
+      .MultiFile-preview {
+          width: 48%;
+      }
+  }
+
+  .land#ifYes {
+      display: none;
+  }

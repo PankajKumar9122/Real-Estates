@@ -1,0 +1,564 @@
+body {
+    background: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.first,
+.second,
+.third,
+.fourth,
+.fifth {
+    height: auto;
+    width: 100%;
+    background: white;
+    padding: 20px 20px 20px 40px;
+    margin: 10px 0;
+    float: left;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+div.radio-box {
+    width: ;
+    display: block;
+    align-items: center;
+    justify-content: space-around;
+}
+
+input[name="radio-01"],
+input[name="radio-02"] {
+    display: none
+}
+
+input[name="radio-01"] + label {
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: 4px 10px 10px 0;
+}
+
+input[name="radio-02"] + label {
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    margin: 4px 10px 10px 0;
+}
+
+/* - - - radio 01 - - - */
+input[name="radio-01"] + label,
+input[name="radio-02"] + label {
+    transition: all 200ms cubic-bezier(.4, .25, .3, 1);
+    height: 40px;
+    line-height: 40px;
+    fill: #545454;
+    color: #545454;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 500;
+
+    &:hover {
+        opacity: .65
+    }
+}
+
+
+svg {
+    vertical-align: text-top;
+    line-height: 35px;
+
+
+}
+
+input[name="radio-01"] + label:active,
+input[name="radio-02"] + label:active {
+    transition: none;
+    transform: scale(.925);
+}
+
+input[name="radio-01"]:checked + label,
+input[name="radio-02"]:checked + label {
+    background-color: #2D8EFF;
+    border: 1px solid #2D8EFF;
+    color: #fff;
+    fill: white;
+}
+
+
+
+
+/*the container must be positioned relative:*/
+.custom-select {
+    position: relative;
+}
+
+.custom-select select {
+    display: none;
+    /*hide original SELECT element:*/
+}
+
+.select-selected {
+    background: #fafafa;
+
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+    margin: 10px -1% 0 0;
+    height: 40px;
+    width: 99.5%;
+
+
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+    font-family: "FontAwesome";
+    content: "\f107";
+    background: #fafafa;
+    color: #545454;
+    height: 12px;
+    right: 1px;
+    top: 37px;
+    bottom: 0;
+    padding: 0 5px 15px 5px;
+    margin: 2px 3px 0 0;
+    position: absolute;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+    border-color: transparent transparent #555 transparent;
+    font-family: "FontAwesome";
+    content: "\f106";
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,
+.select-selected {
+    color: #545454;
+    padding: 8px 10px;
+    font-weight: 500;
+    font-size: 15px;
+    user-select: none;
+    white-space: nowrap;
+    overflow: hidden;
+
+
+}
+
+/*style items (options):*/
+.select-items {
+    position: absolute;
+    background-color: #fafafa;
+    top: 110%;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    max-height: 225px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-weight: 500;
+
+
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+    display: none;
+}
+
+.select-items div:hover,
+.same-as-selected {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+
+/*demand form */
+
+.errorfor {
+    color: #FA320C;
+    font-weight: bold;
+    padding-right: 7px;
+
+}
+
+.error.form-factor {
+    border: 1px solid #FA320C !important;
+}
+
+.error {
+    color: #FA320C;
+}
+
+
+.form-container {
+    max-width: 70%;
+    float: left;
+
+}
+
+.fa-exclamation-triangle{
+    color: #FA320C;
+   
+}
+.form-container p {
+
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+    line-height: 22px;
+    color: #333;
+    margin: 1.5% 2% 1.5% 0;
+    background: ;
+
+
+
+}
+
+.content .page-title {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    font-size: 26px;
+    width: 100%;
+    background: white;
+    line-height: 50px;
+}
+
+.content .panel-head {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+     margin-bottom: 10px;
+}
+
+.form-container input[type=text],
+.form-container input[type=email],
+.form-container input[type=phone],
+.form-container input[type=number],
+.form-container textarea {
+
+    border: 1px solid #ccc;
+    font-size: 15px;
+    width: 100%;
+    border-radius: 4px;
+    font-family: 'Libre Franklin', sans-serif;
+    height: 40px;
+    padding: 8px 13px;
+    background: white;
+    color: #545454;
+    font-weight: 500;
+    margin: 10px 0 0 0;
+    float: left;
+    background: #fafafa;
+
+
+}
+
+.form-container input::-webkit-input-placeholder {
+    /* Edge */
+
+    font-weight: 400;
+
+}
+
+.form-container input:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+
+    font-weight: 400;
+}
+
+.form-container input::placeholder {
+
+    font-weight: 400;
+}
+
+
+
+.form-container input[type=text]:focus::-webkit-input-placeholder,
+.form-container input[type=number]:focus::-webkit-input-placeholder,
+.form-container input[type=email]:focus::-webkit-input-placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+
+.form-container input:focus::placeholder {
+    transition: opacity 0.45s ease;
+    opacity: 0;
+}
+
+.form-container .pmid {
+    width: 47%;
+    float: left;
+    margin-top: 10px 0;
+    margin-right:3%;
+}
+
+.form-container .full {
+    float: left;
+    width: 97%;
+    margin-top: 10px 0;
+}
+
+.form-container .small {
+    width: 30.2%;
+    float: left;
+    margin-top: 10px 0 ;
+    margin-right: 3%;
+    
+}
+
+.form-container .small:last-child {
+    float: left;
+}
+
+.form-container textarea {
+    min-height: 250px;
+}
+
+.form-container .form-control {
+    height: 35px;
+    background: #fafafa;
+    padding: 1px 10px;
+}
+
+.form-container input[type=text]:focus,
+.form-container input[type=number]:focus,
+.form-container input[type=email]:focus
+{
+    border: 1px solid #2D8EFF;
+    height: 40px;
+    outline: none;
+}
+
+.form-container textarea:focus {
+    border: 1px solid #2D8EFF;
+    height: 40px;
+    outline: none;
+}
+
+
+.form-container .btn-success {
+
+    background: #dc143c;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: .3px;
+    border-radius: 4px;
+    padding: 9px;
+    margin: 15px 0px 10px 0px;
+    font-size: 16px;
+    width: 97%;
+    border: none;
+    height: 40px;
+}
+
+.form-container .btn-success:hover {
+    cursor: pointer;
+    background: #eb1f48;
+}
+
+@media only screen and (max-width:1000px) {
+    .form-container {
+
+        max-width: 100%;
+    }
+
+    .first,
+    .second,
+    .third,
+    .fourth,
+    .fifth {
+        padding: 25px 10px 25px 20px;
+    }
+
+    .form-container p {
+        margin-top: 23px;
+    }
+
+    .form-container input[type=text],
+    .form-container input[type=number],
+    .form-container input[type=email],
+    .form-container select {
+        height: 45px;
+    }
+
+    .form-container input[type=text]:focus,
+    .form-container input[type=number]:focus,
+     .form-container input[type=email]:focus{
+        height: 45px;
+
+    }
+
+    input[name="radio-01"] + label,
+    input[name="radio-02"] + label {
+
+        height: 45px;
+        line-height: 45px;
+    }
+
+    .select-selected {
+        background: #fafafa;
+        color: #333;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-weight: 500;
+        margin: 9px -1% 0 0;
+        height: 45px;
+        line-height: 28px;
+
+    }
+
+    .select-selected:after {
+        top: 33px;
+        margin-top: 6px;
+
+    }
+
+    form-container .btn-success {
+        height: 45px;
+    }
+
+    .right-container {
+        width: 100% !important;
+    }
+
+    .tips-list {
+        padding-left: 0;
+    }
+
+}
+
+.right-container {
+    width: 28%;
+    height: 100%;
+    background: #fff;
+    float: right;
+    margin-top: 10px;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+
+}
+
+.support-pitch {
+    font-size: 14px;
+    font-weight: 500;
+    color: #555;
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+.contact-details,
+.contact-details a {
+    font-weight: 600;
+    font-size: 15px;
+    color: #444;
+    text-decoration: none;
+    margin-top: 15px;
+    padding: 5px 10px 5px 0;
+}
+
+.contact-details .email-details {
+    color: #2D8EFF;
+}
+
+.tips {
+    margin-top: 25px;
+    background: #f1f8ff;
+    color: #2D8EFF !important;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+    float: left;
+    width: 100%;
+
+}
+
+.tips span {
+    float: right;
+    padding-right: 20px;
+}
+
+.tips-list {
+    padding-left: 5px;
+    list-style-type: none;
+    margin-top: 20px;
+    float: left;
+    line-height: 20px;
+    font-size: 15px;
+    color: #545454;
+    font-weight: 500;
+}
+
+.tips-list li {
+    height: 30px;
+    float: left;
+    width: 100%;
+}
+
+.tips-list li .fa-check-square-o {
+    margin-right: 10px;
+    color: #32CD32;
+}
+
+
+/*photo guide*/
+
+.marketing {
+    width: 100%;
+
+}
+
+.sale_pitch {
+    position: relative;
+    min-height: 1px;
+    width: 100%;
+    float: left;
+}
+
+.sale_pitch p {
+    font-size: 16px;
+    padding: 5px 0;
+    font-weight: 500;
+    color: #333;
+}
+
+.marketing img {
+    width: 97%;
+    height: auto;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+@media only screen and (max-width:1000px){
+  
+    .marketing {
+    width: 50%;
+        float: left;
+
+}
+    
+}
+
+@media only screen and (max-width:550px){
+    
+        .marketing {
+    width: 100%;
+        float: left;
+
+}
+    
+}
